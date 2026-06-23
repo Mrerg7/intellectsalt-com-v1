@@ -18,8 +18,11 @@ const publishedDate = page?.data.publishedDate;
   publishedDate={publishedDate}
 >
   <!-- Hero Section -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-brand-900/0 via-brand-950/80 to-brand-950"></div>
+  <section
+    class="relative overflow-hidden min-h-[70vh] flex items-center"
+    style="background-image: url('https://imagedelivery.net/-sPAUAWeA405NiWJ0SNIQA/14c447b1-fc32-41d5-a132-d9ce1f610e00/public'); background-size: cover; background-position: center;"
+  >
+    <div class="absolute inset-0 bg-brand-950/70 backdrop-blur-[2px]"></div>
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-32 md:pb-24 relative z-10">
       <div class="max-w-3xl">
         <p class="text-accent-light font-medium text-sm tracking-widest uppercase mb-4">
@@ -238,20 +241,3 @@ const publishedDate = page?.data.publishedDate;
     </p>
   </article>
 </BaseLayout>
----
-
----
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
