@@ -1,4 +1,244 @@
 ---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const page = await getEntry('pages', 'home');
+
+const title = page?.data.title ?? "intellectsalt.com — The Essential Seasoning of the Mind";
+const description = page?.data.description ?? "Premium brandable domain available for strategic acquisition.";
+const image = page?.data.image;
+const publishedDate = page?.data.publishedDate;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  canonicalURL="https://intellectsalt.com/"
+  publishedDate={publishedDate}
+>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-900/0 via-brand-950/80 to-brand-950"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-32 md:pb-24 relative z-10">
+      <div class="max-w-3xl">
+        <p class="text-accent-light font-medium text-sm tracking-widest uppercase mb-4">
+          Premium Brandable Domain
+        </p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brand-50 mb-6 leading-tight">
+          intellectsalt<span class="text-accent">.</span>com
+        </h1>
+        <p class="text-xl md:text-2xl text-brand-300 font-serif italic mb-8 leading-relaxed">
+          The Essential Seasoning of the Mind
+        </p>
+        <p class="text-brand-400 text-lg mb-10 max-w-2xl">
+          Available for Strategic Acquisition
+        </p>
+        <a
+          href="mailto:sales@desertrich.com?subject=intellectsalt.com%20Acquisition%20Inquiry"
+          class="cta-button text-lg"
+        >
+          Inquire About Acquisition →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 prose-custom">
+    <!-- The Concept -->
+    <h2>The Concept</h2>
+    <p>
+      <strong>Intellect</strong> is the mind&rsquo;s capacity for rational thought, understanding,
+      and the acquisition of knowledge &mdash; the faculty that enables logical reasoning,
+      discrimination, and the comprehension of complex ideas.
+    </p>
+    <p>
+      <strong>Salt</strong> (sodium chloride, NaCl) is the foundational compound formed from acid
+      and base, renowned as a seasoning, preservative, and essential participant in biological
+      processes &mdash; including the precise ionic balance required for life itself.
+    </p>
+    <p>
+      <strong>Intellect Salt</strong> fuses these two elemental forces into a single, unforgettable
+      name. It evokes the <em>seasoning</em> that makes thought vivid and memorable, the
+      <em>preservative</em> that safeguards wisdom across generations, and the
+      <em>biochemical foundation</em> that makes sharp cognition possible in the first place.
+    </p>
+
+    <hr />
+
+    <!-- Philosophical Depth -->
+    <h2>Philosophical Depth</h2>
+    <p>
+      Ralph Waldo Emerson, in his essay <em>Intellect</em>, captured the transcendent power of
+      the mind:
+    </p>
+    <blockquote>
+      &ldquo;Water dissolves wood, and iron, and salt; air dissolves water; electric fire
+      dissolves air, but the intellect dissolves fire, gravity, laws, method, and the subtlest
+      unnamed relations of nature in its resistless menstruum.&rdquo;
+    </blockquote>
+    <p>
+      Here, intellect is portrayed as the ultimate solvent &mdash; capable of transcending even
+      physical laws through pure thought. <strong>Intellect Salt</strong> grounds this lofty
+      philosophical power in the tangible, essential element that makes such thought biologically
+      and culturally sustainable.
+    </p>
+    <p>
+      Historically, &ldquo;salt&rdquo; has also signified refined wit and intellectual liveliness
+      (&ldquo;Attic salt&rdquo;). The name therefore operates on multiple resonant levels:
+      chemistry, philosophy, culture, and the sharp edge of human intelligence.
+    </p>
+
+    <hr />
+
+    <!-- The Science -->
+    <h2>The Science: Brain Chemistry &amp; the Cultivation of Intellect</h2>
+    <p>
+      Intellect is not an abstract gift alone &mdash; it is deeply rooted in
+      <strong>brain chemistry</strong> and can be meaningfully influenced by diet, nutrients,
+      and lifestyle.
+    </p>
+    <p>
+      Neuronal signaling depends on electrolytes and ionic salts (sodium, potassium, magnesium,
+      calcium) to generate action potentials and enable synaptic transmission. Neurotransmitters
+      critical to memory, focus, motivation, and learning (acetylcholine, dopamine, glutamate)
+      are synthesized and modulated by micronutrients and minerals. Thyroid hormones, which
+      regulate brain metabolism and development, require iodine &mdash; historically delivered
+      to populations through iodized salt.
+    </p>
+    <p>
+      Iodine deficiency once caused widespread cretinism and severe intellectual impairment.
+      The introduction of iodized salt produced measurable population-level gains in cognitive
+      function, with studies showing average IQ improvements of approximately 13&ndash;15 points
+      in previously deficient regions.
+    </p>
+    <p>
+      Modern research confirms that diet and targeted nutrition directly affect executive
+      function, memory consolidation, processing speed, and neuroplasticity. Optimized mineral
+      balance, hydration, and specific nutrients &ldquo;groom&rdquo; and enhance intellectual
+      performance, while deficiencies produce brain fog, reduced focus, and accelerated
+      cognitive decline.
+    </p>
+    <p>
+      <strong>Intellect Salt</strong> is therefore more than a poetic name &mdash; it is a
+      precise conceptual fit for the science of cognitive optimization: the right
+      &ldquo;salts&rdquo; and foundational elements that enable the intellect to reach its
+      highest expression.
+    </p>
+
+    <hr />
+
+    <!-- Why Premium -->
+    <h2>Why This Domain Commands a Premium Acquisition Price</h2>
+    <p>
+      <strong>intellectsalt.com</strong> is not a commodity domain. It is a
+      <strong>strategic brand asset</strong> with rare qualities that justify significant
+      investment:
+    </p>
+    <ul>
+      <li>
+        <strong>Multi-layered meaning</strong> &mdash; chemistry, philosophy (Emerson),
+        cultural wit (&ldquo;salt&rdquo;), preservation, and modern cognitive science
+        &mdash; giving it unusual depth and storytelling power.
+      </li>
+      <li>
+        <strong>Linguistic excellence</strong> &mdash; short, rhythmic, easy to spell and
+        pronounce, yet sophisticated and ownable.
+      </li>
+      <li>
+        <strong>Category ownership</strong> &mdash; instantly positions any venture at the
+        intersection of mind, science, and human potential.
+      </li>
+      <li>
+        <strong>Market timing</strong> &mdash; perfect for high-growth sectors: cognitive
+        enhancement &amp; nootropics, AI + human intelligence, longevity &amp; brain health,
+        EdTech, thought leadership platforms, neuroscience publishing, and premium wellness.
+      </li>
+      <li>
+        <strong>Development-ready</strong> &mdash; projects immediate credibility and
+        substance. Ideal for product lines (e.g., electrolyte/nootropic formulations), media
+        properties, SaaS tools, research institutes, or institutional brands.
+      </li>
+      <li>
+        <strong>Scarcity &amp; defensibility</strong> &mdash; a unique, evocative compound
+        unlikely to be replicated or surpassed in resonance.
+      </li>
+    </ul>
+    <p>
+      Premium domains offering this combination of memorability, authority, and cross-sector
+      versatility routinely achieve strong acquisition prices when they deliver clear brand
+      equity and long-term strategic value.
+    </p>
+
+    <hr />
+
+    <!-- Brand Applications -->
+    <h2>Ideal Brand Applications</h2>
+    <ul>
+      <li>Cognitive health, nootropics, or functional &ldquo;brain mineral&rdquo; formulations</li>
+      <li>AI ethics, human-AI symbiosis, or intelligence augmentation platforms</li>
+      <li>Lifelong learning, knowledge preservation, or executive education brands</li>
+      <li>Neuroscience research, publishing, or thought leadership media</li>
+      <li>High-performance consulting, philosophy of mind, or optimization communities</li>
+      <li>Premium wellness or longevity brands focused on mental clarity and metabolic brain health</li>
+    </ul>
+
+    <hr />
+
+    <!-- The Opportunity -->
+    <h2>The Opportunity</h2>
+    <p>
+      We live in an age of unprecedented cognitive demand, artificial intelligence, and intense
+      focus on extending not just lifespan but <em>healthspan</em> and mental performance.
+      <strong>intellectsalt.com</strong> offers immediate brand authority and a defensible
+      position at the center of these conversations.
+    </p>
+    <p>
+      It is the name for the venture that understands a profound truth: intellect is not merely
+      acquired through information &mdash; it is enabled, preserved, and amplified by the right
+      foundational elements. The right <em>salt</em>.
+    </p>
+
+    <hr />
+
+    <!-- Secure This Asset -->
+    <h2>Secure This Asset</h2>
+    <p>
+      <strong>intellectsalt.com</strong> is available for acquisition by serious buyers and
+      organizations seeking a distinctive, high-potential digital property.
+    </p>
+    <ul>
+      <li>Pricing available upon request (premium positioning)</li>
+      <li>Flexible terms for qualified inquiries</li>
+      <li>Optional branding strategy consultation available</li>
+    </ul>
+    <p>
+      <strong>Ready to own the name that captures the essential seasoning of thought?</strong>
+    </p>
+    <p>Contact us today to discuss acquisition and next steps.</p>
+
+    <div class="mt-12 text-center">
+      <a
+        href="mailto:sales@desertrich.com?subject=intellectsalt.com%20Acquisition%20Inquiry"
+        class="cta-button text-lg"
+      >
+        Contact: sales@desertrich.com →
+      </a>
+    </div>
+
+    <hr />
+
+    <p class="text-brand-500 text-sm italic mt-12">
+      <em>
+        Copy crafted for a sophisticated, high-value sales experience. The tone is intellectual
+        yet accessible, substantive yet persuasive &mdash; designed to attract serious buyers
+        who value depth, authority, and long-term brand equity.
+      </em>
+    </p>
+  </article>
+</BaseLayout>
+---
 
 ---
 
